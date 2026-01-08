@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Three.js Particle System -->
+    <div id="particle-container"></div>
+
+    <!-- Control Buttons -->
+    <button id="toggle-audio" class="control-btn">🔈</button>
+    <button id="toggle-fullscreen" class="control-btn">⛶</button>
+
+    <!-- ===== DRAMATIC ENTRANCE ===== -->
+    <div id="dramatic-entrance">
+        <div class="destiny-message" id="destiny1">"In a universe of infinite possibilities..."</div>
+        <div class="destiny-message" id="destiny2">"Two stars aligned at the perfect moment..."</div>
+        <div class="destiny-message" id="destiny3">"Your heart called to mine across time and space..."</div>
+        <div class="destiny-message" id="destiny4">"And I found my forever in you..."</div>
+        <div class="final-destiny" id="finalDestiny">For the one who owns my heart... 💫</div>
+    </div>
+
+    <!-- Step 1: Envelope (initially hidden) -->
+    <div class="envelope" id="envelope" style="display: none;">
+        💌 CLICK ME BABY! 💌
+    </div>
+
+    <!-- Step 2: Question -->
+    <div class="question-screen" id="questionScreen">
+        <h2>💖 Hey Babe! Quick Question... 💖</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">When is my birthday?</p>
+        <input type="text" id="birthdayAnswer" placeholder="21 October">
+        <button onclick="checkAnswer()">Submit My Answer 💕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
